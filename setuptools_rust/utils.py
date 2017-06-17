@@ -6,7 +6,7 @@ from distutils.errors import DistutilsPlatformError
 import semantic_version
 
 
-class Binding:
+class Binding(object):
     """
     Binding Options
     """

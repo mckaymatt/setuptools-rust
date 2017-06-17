@@ -61,7 +61,7 @@ class test_rust(Command):
 
             # build cargo command
             feature_args = ["--features " + " ".join(features)] if features else []
-            args = (["cargo", "rustc", "--lib", "--manifest-path", ext.path]
+            args = (["cargo", "test", "--color", 'always', "--manifest-path", ext.path]
                     + feature_args
                     + list(ext.args or []))
 
